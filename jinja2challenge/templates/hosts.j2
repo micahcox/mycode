@@ -1,0 +1,18 @@
+
+
+<!doctype html>
+<html>
+   <body>
+    <li><a href = '/form'></b>Click here to add more data</b></a></li>
+    <li><a href = '/logout'></b>Click here to log out</b></a></li>
+    <table>
+        {% for host in groups %}
+            <tr>
+                <td>{{ host.ip}}</td>
+                <td>{{ host.fqdn }}</td>
+                <td>{{ host.hostname }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   <body>
+    <table>
+        {% for host in groups["groups"] -%}
+            <tr>
+                <td>{{ host["hostame"] }}</td>
+                <td>{{ host["ip"] }}</td>
+                <td>{{ host["fqdn"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+   </body>
+</html>
+
