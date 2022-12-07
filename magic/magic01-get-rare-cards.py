@@ -18,9 +18,9 @@ def mtk_rare_cards():
     rare_cards = {}
     "Dictionary of cards keyed by name"
     for card in cards:
-        rare_card[card.name] = card.rarity
+        rare_cards[card.name] = card.rarity
 
-    return rare_cards.card
+    return(rare_cards)
 
 if __name__ == "__main__":
    app.run(host="0.0.0.0", port=2224) # runs the application
